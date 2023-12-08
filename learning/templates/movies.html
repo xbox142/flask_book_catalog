@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies List</title>
+</head>
+<body>
+    <h1>Moving to watch</h1>
+    <h2>This collection belongs to {{ name }}</h2>
+    <h3>movies: {{ movies }}</h3>
+    <h3>first: {{ movies[0] }}</h3>
+    <h3>slicing: {{ movies[1:4] }}</h3>
+    <ul>
+        {% for movie in movies %}
+        <li>{{ movie }}</li>
+
+        {% endfor %}
+    </ul>
+</body>
+</html>
